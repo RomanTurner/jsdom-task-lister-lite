@@ -1,4 +1,5 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,12 +7,18 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+
   <div id="main-content">
     <h1>Task Lister Lite™️</h1>
 
     <form id="create-task-form" action="#" method="post">
       <label for="new-task-description">Task description:</label>
       <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
+      <select id="priority">
+        <option value="c-priority">High</option>
+        <option value="b-priority">Medium</option>
+        <option value="a-priority">Low</option>
+      </select>
       <input type="submit" value="Create New Task">
     </form>
 
@@ -21,7 +28,7 @@
       </ul>
     </div>
 
-    <script src="./src/index.js"></script>
+    <script src="/src/index.js"></script>
   </div>
 
 </body>
